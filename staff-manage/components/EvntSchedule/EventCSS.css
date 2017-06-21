@@ -1,0 +1,170 @@
+/* calendar styles */
+hr {
+margin-top:2.5px !important;
+margin-bottom:2.5px !important;
+}
+#calendar {
+    float:left;
+    -moz-user-select: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 6px 6px 6px 6px;
+    color: #333333;
+    font-family: PT Sans Narrow;
+    font-size: 1.1em;
+    margin: 10px auto;
+    padding: 0.4em;
+    width: 58%;
+}
+#SideBarBox {
+float:right;
+margin-top:10px;
+margin-right:1.5%; 
+width:23%;
+padding-left:1%;
+padding-right:1%;
+padding-top:5px;
+padding-bottom:10px;
+height:620px;
+background:#FFF;
+}
+
+#calendar .navigation {
+    height:40px;
+    background-color: #CC0000;
+    border: 1px solid #E3A1A1;
+    border-radius: 6px 6px 6px 6px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 1px;
+    margin:auto;
+    position: relative;
+}
+#calendar .navigation .title {
+    font-size:24px;
+    background: none repeat scroll 0 0 transparent;
+    border-color: rgba(0, 0, 0, 0);
+    color: inherit;
+    line-height: auto;
+    margin: 0 2.3em;
+    text-align: center;
+}
+#calendar .navigation .prev, #calendar .navigation .next {
+    background-image: url(/code/app/EvntSchedule/nav.png);
+    height: 24px;
+    opacity: 0.9;
+    position: absolute;
+    top: 6px;
+    width: 24px;
+}
+#calendar .navigation .prev {
+    background-position: 0 0;
+    left: 4px;
+}
+#calendar .navigation .next {
+    background-position: -24px 0;
+    right: 4px;
+}
+#calendar .navigation .prev:hover, #calendar .navigation .next:hover {
+    opacity: 1;
+}
+#calendar table {
+    margin:auto;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    table-layout: fixed;
+    width: 100%;
+}
+#calendar table th {
+    border: 0 none;
+    font-weight: bold;
+    font-size:24px;
+    text-transform: capitalize;
+    padding: 0.7em 0.3em;
+    text-align: center;
+    color:#FFFFFF;
+}
+#calendar table td {
+    width:150px;
+    height:100px;
+    border: 0 none;
+    padding: 1px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+}
+.CalNum {
+    color: #CC0000;
+    font-size:20px;
+    font-weight: bold;
+    padding: 0.2em;
+    padding-right:0.5em;
+    text-align: right;
+    text-decoration: none;
+    cursor:default;
+}
+#TaskBox {
+margin-top:-30px;
+margin-left:5px;
+z-index:99;
+}
+a.LinkZ {
+margin-bottom:10px;
+color: #CC0000;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* Schedule */
+#schedule {
+height:65%;
+font-family: PT Sans Narrow;
+color:#000;
+}
+
+#ScheduleHeader {
+width:50%;
+font-size:24px;
+font-weight:bold;
+margin-left:auto;
+margin-right:auto;
+ }
+.ListText {
+font-size:12px !important;
+font-weight:normal !important;
+color: #000 !important;
+}
+.TitleTtl {
+font-size:17px;
+font-weight:bold;
+clear:both;
+}
+.listContent {
+font-size:13px;
+clear:both;
+}
+.TimeTttl {
+font-size:13px;
+font-weight:bold;
+clear:both;
+}
+
+/* Form Box */
+#SubmitBox {
+height:33%;
+margin-top:1%;
+}
+
+/* Hover */
+#calendar table td a:hover {
+    color: #111111;
+}
+#calendar table td.current a {
+    font-weight: bold;
+    opacity: 1;
+}
+#calendar table td.today a {
+    background-color: #FBF8EE;
+    border: 1px solid #FCD3A1;
+    color: #444444;
+    font-weight: bold;
+    opacity: 1;

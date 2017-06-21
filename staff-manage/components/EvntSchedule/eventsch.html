@@ -1,0 +1,49 @@
+<script type="text/javascript" language="javascript">
+   $(document).ready(function() {
+      $("a.prev").click(function(event){
+          $('#EventCalendar').load('components/EvntSchedule/EventSchedule.php?month=__prev_month__&_r=' + Math.random()); 
+		  $("#taskList").children().remove();
+		  return false;
+      });
+	  $("a.next").click(function(event){
+          $('#EventCalendar').load('components/EvntSchedule/EventSchedule.php?month=__next_month__&_r=' + Math.random()); 
+		  $("#taskList").children().remove();
+		  return false;
+      });
+   });
+</script>
+
+<div class="navigation">
+<svg class="arwLeft" width="0.375in" height="0.986111in" viewBox="0 0 27 71">
+  <a xlink:href="EventSchedule.php?month=__prev_month__" class="prev">
+  <path id="GoLeft"
+        fill="rgba(255,255,255,0.4)" stroke="black" stroke-width="2"
+        d="M 24.00,3.00
+           C 24.00,3.00 24.00,66.00 24.00,66.00
+             24.00,66.00 2.00,36.00 2.00,36.00
+             2.00,36.00 24.00,3.00 24.00,3.00" />
+</svg>
+    <div class="title" >__cal_caption__</div>
+<svg class="arwRight" width="0.375in" height="0.986111in" viewBox="0 0 27 71">
+  <a xlink:href="EventSchedule.php?month=__next_month__" class="next">
+  <path id="GoRight"
+        fill="rgba(255,255,255,0.4)" stroke="black" stroke-width="2"
+         d="M 3.00,3.00
+           C 3.00,3.00 3.00,66.00 3.00,66.00
+             3.00,66.00 25.00,36.00 25.00,36.00
+             25.00,36.00 3.00,3.00 3.00,3.00" />
+</svg>
+</div>
+
+<table>
+    <tr>
+        <th class="weekday">Sun</th>
+        <th class="weekday">Mon</th>
+        <th class="weekday">Tue</th>
+        <th class="weekday">Wed</th>
+        <th class="weekday">Thu</th>
+        <th class="weekday">Fri</th>
+        <th class="weekday">Sat</th>
+    </tr>
+    __cal_rows__
+</table>
